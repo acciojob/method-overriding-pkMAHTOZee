@@ -9,7 +9,7 @@ public class Main {
     }
 
     // Task 2: Create class B which extends class A
-    static class B extends A {
+    class B extends A {
         // Task 4: Override method meth of class A in class B
         @Override
         String meth() {
@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Task 3: Create an object of class B and call method meth of class A with it
-        B objB = new B();
+        B objB = new Main().new B();
         String resultTask3 = objB.meth();
         System.out.println(resultTask3);
 
